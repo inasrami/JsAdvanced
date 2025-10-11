@@ -1,0 +1,34 @@
+function cars(commands) {
+    const objects = {};
+    
+    const actions = {
+        create: function(name, inherits, parentName) {
+            if (inherits === 'inherit') {
+                objects[name] = Object.create(objects[parentName]);
+            } else {
+                objects[name] = {};
+            }
+        },
+        set: function(name, key, value) {
+            objects[name][key] = value;
+        },
+        print: function(name) {
+            const obj = objects[name];
+            const properties = [];
+            
+            for (let key in obj) {
+                properties.push(`${key}:${obj[key]}`);
+            }
+            
+            console.log(properties.join(','));
+        }
+    };
+    
+    for (let command of commands) {
+        const parts = command.split(' ');
+        const action = parts[0];
+        const params = parts.slice(1);
+        
+        actions[action](...params);
+    }
+}
