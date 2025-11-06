@@ -1,0 +1,108 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitaire</title>
+    <link rel="stylesheet" href="/site.css">
+</head>
+
+<body>
+    <section id="controls">
+        <button id="new-game">New Game</button>
+    </section>
+
+    <section id="board">
+
+        <div id="decks">
+            <div id="stock">
+                <article class="deck" data-action="flip" data-type="stock">
+                    <div class="card" data-index="0"><span class="back"></span></div>
+                    <div class="card" data-index="1"><span class="back"></span></div>
+                    <div class="card" data-index="2"><span class="back"></span></div>
+                    <div class="card" data-index="3"><span class="back"></span></div>
+                    <div class="card" data-index="4"><span class="back"></span></div>
+                    <div class="card" data-index="5"><span class="back"></span></div>
+                    <div class="card" data-index="6"><span class="back"></span></div>
+                    <div class="card" data-index="7"><span class="back"></span></div>
+                    <div class="card" data-index="8"><span class="back"></span></div>
+                    <div class="card" data-index="9"><span class="back"></span></div>
+                    <div class="card" data-index="10"><span class="back"></span></div>
+                    <div class="card" data-index="11"><span class="back"></span></div>
+                    <div class="card" data-index="12"><span class="back"></span></div>
+                    <div class="card" data-index="13"><span class="back"></span></div>
+                    <div class="card" data-index="14"><span class="back"></span></div>
+                    <div class="card" data-index="15"><span class="back"></span></div>
+                    <div class="card" data-index="16"><span class="back"></span></div>
+                    <div class="card" data-index="17"><span class="back"></span></div>
+                    <div class="card" data-index="18"><span class="back"></span></div>
+                    <div class="card" data-index="19"><span class="back"></span></div>
+                    <div class="card" data-index="20"><span class="back"></span></div>
+                    <div class="card" data-index="21"><span class="back"></span></div>
+                    <div class="card" data-index="22"><span class="back"></span></div>
+                    <div class="card active top" data-index="23"><span class="back top"></span></div>
+                </article>
+                <article class="deck" data-type="waste"></article>
+            </div>
+
+            <div id="foundation">
+                <article class="deck" data-type="foundations" data-suit="clubs"></article>
+                <article class="deck" data-type="foundations" data-suit="diamonds"></article>
+                <article class="deck" data-type="foundations" data-suit="hearts"></article>
+                <article class="deck" data-type="foundations" data-suit="spades"></article>
+            </div>
+        </div>
+
+        <div id="pile">
+            <article class="deck" data-action="take" data-type="piles" data-index="0">
+                <div class="card active black top" data-index="0">♣9</div>
+            </article>
+            <article class="deck" data-action="take" data-type="piles" data-index="1">
+                <div class="card" data-index="0"><span class="back"></span></div>
+                <div class="card active red top" data-index="1">♥A</div>
+            </article>
+            <article class="deck" data-action="take" data-type="piles" data-index="2">
+                <div class="card" data-index="0"><span class="back"></span></div>
+                <div class="card" data-index="1"><span class="back"></span></div>
+                <div class="card active red top" data-index="2">♦4</div>
+            </article>
+            <article class="deck" data-action="take" data-type="piles" data-index="3">
+                <div class="card" data-index="0"><span class="back"></span></div>
+                <div class="card" data-index="1"><span class="back"></span></div>
+                <div class="card" data-index="2"><span class="back"></span></div>
+                <div class="card active black top" data-index="3">♣10</div>
+            </article>
+            <article class="deck" data-action="take" data-type="piles" data-index="4">
+                <div class="card" data-index="0"><span class="back"></span></div>
+                <div class="card" data-index="1"><span class="back"></span></div>
+                <div class="card" data-index="2"><span class="back"></span></div>
+                <div class="card" data-index="3"><span class="back"></span></div>
+                <div class="card active black top" data-index="4">♣A</div>
+            </article>
+            <article class="deck" data-action="take" data-type="piles" data-index="5">
+                <div class="card" data-index="0"><span class="back"></span></div>
+                <div class="card" data-index="1"><span class="back"></span></div>
+                <div class="card" data-index="2"><span class="back"></span></div>
+                <div class="card active red" data-index="3">♥8</div>
+                <div class="card active black" data-index="4">♣7</div>
+                <div class="card active red top" data-index="5">♦6</div>
+            </article>
+            <article class="deck" data-action="take" data-type="piles" data-index="6">
+                <div class="card" data-index="0"><span class="back"></span></div>
+                <div class="card" data-index="1"><span class="back"></span></div>
+                <div class="card" data-index="2"><span class="back"></span></div>
+                <div class="card" data-index="3"><span class="back"></span></div>
+                <div class="card" data-index="4"><span class="back"></span></div>
+                <div class="card" data-index="5"><span class="back"></span></div>
+                <div class="card active black top" data-index="6">♣4</div>
+            </article>
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>

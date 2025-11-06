@@ -1,0 +1,13 @@
+{
+  "name": "solitaire",
+  "version": "1.0.0",
+  "main": "index.html",
+  "keywords": [],
+  "author": "VK",
+  "license": "MIT",
+  "description": "",
+  "devDependencies": {
+    "eslint": "^9.37.0",
+    "globals": "^16.4.0"
+  }
+}
