@@ -1,0 +1,85 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profit Tracker</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-wrapper">
+      <form>
+        <h1>Add Property</h1>
+
+        <fieldset>
+          <legend><span class="number">1</span> Property Details</legend>
+          <input type="text" id="location" name="location" placeholder="Location" />
+          <input type="number" id="area" name="area" placeholder="Area (m²)" />
+          <input type="number" id="year" min="1990" max="2025" placeholder="Built Year" />
+          <select id="type" name="type">
+            <option value="Type" selected disabled>Type</option>
+            <option value="Apartment">Apartment</option>
+            <option value="House">House</option>
+            <option value="Office">Office</option>
+            <option value="Villa">Villa</option>
+          </select>
+
+          <legend><span class="number">2</span> Price</legend>
+
+          <input type="number" id="price-per-sqm" step="10" placeholder="Price per m²" />
+          <input type="number" id="expected-profit" step="1" placeholder="Expected Profit Percentage" />
+          <button id="publish" type="submit">Publish</button>
+
+
+      </form>
+    </div>
+
+    <div class="table-wrapper">
+      <section>
+        <div class="tbl-header">
+          <table>
+            <thead>
+              <tr>
+                <th>Location</th>
+                <th>Area</th>
+                <th>Built Year</th>
+                <th>Type</th>
+                <th>Price</th>
+                <th>New Price</th>
+                <th>-</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="tbl-content">
+          <table>
+            <tbody id="table-body">
+
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="sold-wrapper">
+
+        <div id="title-bar">
+          Properties Sold:
+        </div>
+        <div id="nav">
+          <span>Location and Type</span>
+          <span>Built Year</span>
+          <span>Profit made</span>
+        </div>
+        <ul id="property-list">
+
+        </ul>
+      </section>
+      <p id="prf-paragraph">Profit made: <strong id="profit">0.00</strong>€</p>
+    </div>
+  </div>
+  <script src="./solution.js"></script>
+</body>
+
+</html>
